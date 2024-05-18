@@ -5,7 +5,7 @@
  */
 export default async function getWeatherPromise(city) {
   let weatherResponse = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=e64e8bd5d8694271854213446241605&q=${city}`,
+    `https://api.weatherapi.com/v1/current.json?key=e64e8bd5d8694271854213446241605&q=${city}`,
     { mode: "cors" },
   );
 
