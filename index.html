@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <form>
+      <label for="cityInput">Enter a city</label>
+      <input type="text" id="cityInput" />
+      <button type="submit">Find</button>
+    </form>
+
+    <div class="weatherBox">
+      <div class="top">
+        <div id="city">Toronto</div>
+        <button id="toggleTemp">°C</button>
+      </div>
+      <div id="region">Ontario</div>
+      <div id="weatherDescription">Partly Cloudly</div>
+      <div class="tempbox">
+        <img
+          src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+          alt="icon that repersents the current weather"
+          id="weathericon"
+        />
+        <div id="temperature">17°C</div>
+      </div>
+    </div>
+  </body>
+</html>
