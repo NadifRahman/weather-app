@@ -11,4 +11,68 @@
 
 body {
   background-color: #fffdd0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 30%;
+  max-width: 30rem;
+}
+
+label[for="cityInput"] {
+  font-weight: 600;
+}
+
+#cityInput {
+  border-radius: 10px;
+  border: non;
+  border-width: thin;
+  flex: 1;
+  padding: 0.2rem;
+}
+
+#weatherBtn {
+  padding: 0.2rem;
+  border-radius: 10px;
+  border-width: thin;
+}
+
+.weatherBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  padding: 1rem;
+  border: solid thin;
+
+  gap: 1rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.weatherBox.hide {
+  display: none;
+}
+
+.tempbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#toggleTemp {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
