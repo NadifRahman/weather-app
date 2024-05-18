@@ -20,7 +20,6 @@ export default async function getWeatherPromise(city) {
   let refinedWeatherData = {
     location: {
       city: weatherData.location.name,
-      country: weatherData.location.country,
       region: weatherData.location.region,
     },
     description: weatherData.current.condition.text,
